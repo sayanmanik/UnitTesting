@@ -1,0 +1,28 @@
+{
+	
+	"StagingContainer": {
+		"dl-rawstg-amac-pii": {
+			"TargetContainer" : "dl-raw-amac-pii-delta",
+			"container" : "dl-rawstg-amac-pii",
+			"path" : "dl-rawstg-amac-pii/",
+			
+			
+		}
+	},
+	
+	"TargetContainer" : {
+		"dl-rawstg-amac-pii": {
+			"container" : "dl-raw-amac-pii-delta",
+			"path" : "dl-raw-amac-pii-delta/",
+			"Storage_Account": "cdninscacnpdevdl"
+		}
+	},
+	
+	"LogContainer" : {
+		"ins-dl-amac-log" : {
+			"container": "ins-dl-amac-log",
+			"path": "ins-dl-amac-log/",
+			"Storage_Account": "cdninscacnpdevlogdl"
+		}
+	}
+}
