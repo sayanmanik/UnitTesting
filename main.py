@@ -59,6 +59,29 @@ def get_containers(param):
         return get_target_container()
 
 
+def get_create_batch_entry():
+    curr_batch_id = 100
+    batch_start_ts = '2023-02-10 08:15:44.287'
+    delta_start_ts = '2023-02-10'
+    delta_end_ts = '2023-02-10'
+    return curr_batch_id, batch_start_ts, delta_start_ts, delta_end_ts
+
+
+def get_upsert_task_status():
+    etl_control_task_id = 12
+    task_status = 'SUCCESS'
+
+    return etl_control_task_id, task_status
+
+
+def get_close_batch_status():
+    batch_id = 10
+    previous_status = 'STARTED'
+    batch_status = 'SUCCESS'
+
+    return batch_id, previous_status, batch_status
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print(get_settings())
